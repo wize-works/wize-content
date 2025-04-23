@@ -6,7 +6,7 @@ WORKDIR /app
 # Accept build-time NODE_ENV
 ARG NODE_ENV=production
 ENV NODE_ENV=$NODE_ENV
-RUN echo "NODE_ENV is set to $NODE_ENV"
+
 # Install dependencies (including dev for build tools like TypeScript)
 COPY package.json package-lock.json* ./
 RUN npm ci
