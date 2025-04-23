@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wize-content
+  namespace: wizeworks
+  labels:
+    app: wize-content
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: wize-content
+  template:
+    metadata:
+      labels:
+        app: wize-content
+    spec:
+      containers:
+      - name: wize-content
+        image: ${ACR_NAME}.azurecr.io/wize-content:${IMAGE_TAG}
+        ports:
+        - containerPort: 80
+        env:
+        - name: ENVIRONMENT
+          value: "production"
+        - name: SUPABASE_URL
+          value: "${SUPABASE_URL}"
+        - name: SUPABASE_KEY
+          value: "${SUPABASE_KEY}"
+        - name: SENTRY_DSN
+          value: "${SENTRY_DSN}"
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "250m"
+          limits:
+            memory: "256Mi"
+            cpu: "500m"
