@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/wize-works/wize-content/compare/v1.4.0...v1.5.0) (2025-04-23)
+
+
+### Features
+
+* release total count feature ([7cb7531](https://github.com/wize-works/wize-content/commit/7cb75316f421dbf390e5fea3c955e3a74db14e58))
+
 # [1.4.0](https://github.com/wize-works/wize-content/compare/v1.3.0...v1.4.0) (2025-04-23)
 
 
