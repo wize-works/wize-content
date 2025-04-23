@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/wize-works/wize-content/compare/v1.3.0...v1.4.0) (2025-04-23)
+
+
+### Features
+
+* add total count support to list queries ([30cb209](https://github.com/wize-works/wize-content/commit/30cb20997ffcf00970b1b34d5155923c1e92905a))
+
 # [1.3.0](https://github.com/wize-works/wize-content/compare/v1.2.0...v1.3.0) (2025-04-23)
 
 
