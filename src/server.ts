@@ -12,7 +12,7 @@ import { buildUnifiedGraphQLSchemaFromFolder } from '@wizeworks/graphql-factory'
 const app = Fastify();
 Sentry.setupFastifyErrorHandler(app);
 
-const port = process.env.PORT ? parseInt(process.env.PORT, 10) : 80;
+const port = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 
 const schema = buildUnifiedGraphQLSchemaFromFolder(path.join(__dirname, 'models'));
 

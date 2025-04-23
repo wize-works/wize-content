@@ -37,7 +37,7 @@ COPY --from=builder /app/dist/models ./dist/models
 # Accept build-time NODE_ENV
 ARG NODE_ENV=production
 ENV NODE_ENV=$NODE_ENV
-EXPOSE 80
+EXPOSE 3000
 
 # Optional: Healthcheck
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s CMD wget -qO- http://localhost:80/health || exit 1
