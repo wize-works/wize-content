@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/wize-works/wize-content/compare/v1.1.2...v1.1.3) (2025-04-23)
+
+
+### Bug Fixes
+
+* update healthcheck URL to use port 3000 in Dockerfile ([d4ea239](https://github.com/wize-works/wize-content/commit/d4ea239c8d2358cc4aad25e2c2fc390a5885cbd4))
+
 ## [1.1.2](https://github.com/wize-works/wize-content/compare/v1.1.1...v1.1.2) (2025-04-23)
 
 
