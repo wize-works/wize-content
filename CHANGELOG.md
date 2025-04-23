@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/wize-works/wize-content/compare/v1.5.0...v1.6.0) (2025-04-23)
+
+
+### Features
+
+* added record count to list results ([d683dd7](https://github.com/wize-works/wize-content/commit/d683dd7cee11a6e9021bc6f62ad72f687a2e5397))
+
 # [1.5.0](https://github.com/wize-works/wize-content/compare/v1.4.0...v1.5.0) (2025-04-23)
 
 
