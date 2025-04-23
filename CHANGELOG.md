@@ -1,3 +1,10 @@
+## [1.0.14](https://github.com/wize-works/wize-content/compare/v1.0.13...v1.0.14) (2025-04-23)
+
+
+### Bug Fixes
+
+* streamline Dockerfile by removing unnecessary echo commands and restoring NODE_ENV handling ([050efb0](https://github.com/wize-works/wize-content/commit/050efb04a9e1567a278bcc9fb01430710b997ce2))
+
 ## [1.0.13](https://github.com/wize-works/wize-content/compare/v1.0.12...v1.0.13) (2025-04-23)
 
 
