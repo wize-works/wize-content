@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/wize-works/wize-content/compare/v1.7.0...v1.7.1) (2025-04-23)
+
+
+### Bug Fixes
+
+* remove category field from Content model ([15fec49](https://github.com/wize-works/wize-content/commit/15fec49b15b00c9d3b137c6eff22d2b48c88d44f))
+
 # [1.7.0](https://github.com/wize-works/wize-content/compare/v1.6.0...v1.7.0) (2025-04-23)
 
 
