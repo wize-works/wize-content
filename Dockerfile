@@ -12,8 +12,9 @@ COPY package.json package-lock.json* ./
 RUN npm ci
 
 # Copy source code and build
+RUN echo "Before copying source" && ls -l node_modules/.bin || echo "tsc still missing"
 COPY . .
-RUN echo "Checking for tsc in node_modules/.bin:" && ls node_modules/.bin/tsc
+RUN echo "After COPY" && ls -l node_modules/.bin || echo "tsc clobbered"
 
 RUN npm run build
 
