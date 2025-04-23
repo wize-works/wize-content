@@ -1,6 +1,6 @@
 import { GraphQLModel } from '@wizeworks/graphql-factory';
 const Category: GraphQLModel = {
-    name: 'Category',
+    name: 'content_category',
     fields: {
         id: { type: 'uuid', required: true, defaultValue: 0 },
         name: { type: 'string', required: true },
