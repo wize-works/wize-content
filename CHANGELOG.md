@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/wize-works/wize-content/compare/v1.2.0...v1.3.0) (2025-04-23)
+
+
+### Features
+
+* update graphql-factory version to 1.6.0 and add category field to Content model ([e3c820b](https://github.com/wize-works/wize-content/commit/e3c820ba6eb54567f0c0aa0a2d9eb4f8f7545a55))
+
 # [1.2.0](https://github.com/wize-works/wize-content/compare/v1.1.3...v1.2.0) (2025-04-23)
 
 
