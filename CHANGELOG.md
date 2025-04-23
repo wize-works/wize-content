@@ -1,3 +1,31 @@
+# [1.4.0](https://github.com/wize-works/wize-content/compare/v1.3.0...v1.4.0) (2025-04-23)
+
+
+### Features
+
+* add total count support to list queries ([30cb209](https://github.com/wize-works/wize-content/commit/30cb20997ffcf00970b1b34d5155923c1e92905a))
+
+# [1.3.0](https://github.com/wize-works/wize-content/compare/v1.2.0...v1.3.0) (2025-04-23)
+
+
+### Features
+
+* update graphql-factory version to 1.6.0 and add category field to Content model ([e3c820b](https://github.com/wize-works/wize-content/commit/e3c820ba6eb54567f0c0aa0a2d9eb4f8f7545a55))
+
+# [1.2.0](https://github.com/wize-works/wize-content/compare/v1.1.3...v1.2.0) (2025-04-23)
+
+
+### Features
+
+* reintroduce content_revision model with complete schema definition ([8eafa88](https://github.com/wize-works/wize-content/commit/8eafa889095efef7558b67d4f59bbc377f723149))
+
+## [1.1.3](https://github.com/wize-works/wize-content/compare/v1.1.2...v1.1.3) (2025-04-23)
+
+
+### Bug Fixes
+
+* update healthcheck URL to use port 3000 in Dockerfile ([d4ea239](https://github.com/wize-works/wize-content/commit/d4ea239c8d2358cc4aad25e2c2fc390a5885cbd4))
+
 ## [1.1.2](https://github.com/wize-works/wize-content/compare/v1.1.1...v1.1.2) (2025-04-23)
 
 

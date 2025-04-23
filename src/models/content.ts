@@ -1,4 +1,5 @@
 import { GraphQLModel } from '@wizeworks/graphql-factory';
+import Category from './content_category';
 const Content: GraphQLModel = {
     name: 'Content',
     fields: {
@@ -21,7 +22,13 @@ const Content: GraphQLModel = {
         createdAt: { type: 'datetime', required: true, defaultValue: 'now()' },
         createdBy: { type: 'string', required: true },
         updatedAt: { type: 'datetime', required: true, defaultValue: 'now()' },
-        updatedBy: { type: 'string', required: true }
+        updatedBy: { type: 'string', required: true },
+
+        category: {
+            type: Category,
+            required: false,
+            defaultValue: null,
+        }
     }
 };
 
