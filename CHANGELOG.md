@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/wize-works/wize-content/compare/v1.0.8...v1.0.9) (2025-04-23)
+
+
+### Bug Fixes
+
+* remove NODE_ENV echo from Dockerfile and add .dockerignore for node_modules ([80095ba](https://github.com/wize-works/wize-content/commit/80095baf7366ea5d9e0f0ba3add86605a62715b0))
+
 ## [1.0.8](https://github.com/wize-works/wize-content/compare/v1.0.7...v1.0.8) (2025-04-23)
 
 
