@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/wize-works/wize-content/compare/v1.1.3...v1.2.0) (2025-04-23)
+
+
+### Features
+
+* reintroduce content_revision model with complete schema definition ([8eafa88](https://github.com/wize-works/wize-content/commit/8eafa889095efef7558b67d4f59bbc377f723149))
+
 ## [1.1.3](https://github.com/wize-works/wize-content/compare/v1.1.2...v1.1.3) (2025-04-23)
 
 
