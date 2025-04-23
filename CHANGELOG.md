@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/wize-works/wize-content/compare/v1.0.15...v1.1.0) (2025-04-23)
+
+
+### Features
+
+* restore content_revision model with complete fields definition ([734df7e](https://github.com/wize-works/wize-content/commit/734df7ee607b3dbf070eca086515c11f58c27496))
+
 ## [1.0.15](https://github.com/wize-works/wize-content/compare/v1.0.14...v1.0.15) (2025-04-23)
 
 
