@@ -9,7 +9,8 @@ ENV NODE_ENV=$NODE_ENV
 
 # Install dependencies (including dev for build tools like TypeScript)
 COPY package.json package-lock.json* ./
-RUN npm ci
+RUN npm ci --include=dev
+RUN echo "After npm ci" && ls -l node_modules/.bin || echo "tsc missing"
 
 # Copy source code and build
 RUN echo "Before copying source" && ls -l node_modules/.bin || echo "tsc still missing"
@@ -17,6 +18,7 @@ COPY . .
 RUN echo "After COPY" && ls -l node_modules/.bin || echo "tsc clobbered"
 
 RUN npm run build
+RUN echo "After build" && ls -l node_modules/.bin || echo "tsc missing"
 
 # Stage 2: Runtime
 FROM node:22-alpine
