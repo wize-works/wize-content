@@ -1,3 +1,10 @@
+## [1.0.12](https://github.com/wize-works/wize-content/compare/v1.0.11...v1.0.12) (2025-04-23)
+
+
+### Bug Fixes
+
+* update tsconfig to include all files in src directory ([c04eed1](https://github.com/wize-works/wize-content/commit/c04eed16e433732b9fd1bad54aa3e71216a9c7b2))
+
 ## [1.0.11](https://github.com/wize-works/wize-content/compare/v1.0.10...v1.0.11) (2025-04-23)
 
 
