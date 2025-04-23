@@ -15,7 +15,7 @@ RUN npm ci
 COPY . .
 RUN echo "Checking for tsc in node_modules/.bin:" && ls -l node_modules/.bin && node_modules/.bin/tsc --version
 
-RUN npm run build || npx tsc
+RUN npm run build
 
 # Stage 2: Runtime
 FROM node:22-alpine
