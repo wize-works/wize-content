@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/wize-works/wize-content/compare/v1.0.7...v1.0.8) (2025-04-23)
+
+
+### Bug Fixes
+
+* update Dockerfile to improve tsc check and echo NODE_ENV ([07fef55](https://github.com/wize-works/wize-content/commit/07fef55092c28328dc05012c5c63f892b3fe974b))
+
 ## [1.0.7](https://github.com/wize-works/wize-content/compare/v1.0.6...v1.0.7) (2025-04-23)
 
 
