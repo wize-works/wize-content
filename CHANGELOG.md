@@ -1,3 +1,10 @@
+## [1.0.13](https://github.com/wize-works/wize-content/compare/v1.0.12...v1.0.13) (2025-04-23)
+
+
+### Bug Fixes
+
+* include dev dependencies in Dockerfile build process ([939bf59](https://github.com/wize-works/wize-content/commit/939bf59f187669015b35f090b2afca6e013ada2c))
+
 ## [1.0.12](https://github.com/wize-works/wize-content/compare/v1.0.11...v1.0.12) (2025-04-23)
 
 
