@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/wize-works/wize-content/compare/v1.0.6...v1.0.7) (2025-04-23)
+
+
+### Bug Fixes
+
+* remove fallback to npx tsc in Dockerfile build step ([cd308bb](https://github.com/wize-works/wize-content/commit/cd308bb4ed0f894399174f9a852482f202d97574))
+
 ## [1.0.6](https://github.com/wize-works/wize-content/compare/v1.0.5...v1.0.6) (2025-04-23)
 
 
