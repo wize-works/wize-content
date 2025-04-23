@@ -41,5 +41,3 @@ spec:
                 name: wize-content-service
                 port:
                   number: 80
-
-                  apiVersion: cert-manager.io/v1
