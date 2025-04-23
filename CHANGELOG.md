@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/wize-works/wize-content/compare/v1.1.1...v1.1.2) (2025-04-23)
+
+
+### Bug Fixes
+
+* update port configuration from 80 to 3000 in Dockerfile, deployment, and service files ([b62fc57](https://github.com/wize-works/wize-content/commit/b62fc571ebed3febf81626bd827f20c831f7b5e2))
+
 ## [1.1.1](https://github.com/wize-works/wize-content/compare/v1.1.0...v1.1.1) (2025-04-23)
 
 
