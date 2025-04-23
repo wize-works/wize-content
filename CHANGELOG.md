@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/wize-works/wize-content/compare/v1.1.0...v1.1.1) (2025-04-23)
+
+
+### Bug Fixes
+
+* specify host in app.listen for better accessibility ([cb412fd](https://github.com/wize-works/wize-content/commit/cb412fd673a9c44308cbd23f6104947435b364dd))
+
 # [1.1.0](https://github.com/wize-works/wize-content/compare/v1.0.15...v1.1.0) (2025-04-23)
 
 
