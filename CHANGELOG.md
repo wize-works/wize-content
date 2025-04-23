@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/wize-works/wize-content/compare/v1.0.5...v1.0.6) (2025-04-23)
+
+
+### Bug Fixes
+
+* allow fallback to npx tsc if npm run build fails in Dockerfile ([01bb7d5](https://github.com/wize-works/wize-content/commit/01bb7d529c254846442599ef1cb8074f4b3fdd82))
+
 ## [1.0.5](https://github.com/wize-works/wize-content/compare/v1.0.4...v1.0.5) (2025-04-23)
 
 
