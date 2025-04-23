@@ -1,3 +1,38 @@
+## [1.7.1](https://github.com/wize-works/wize-content/compare/v1.7.0...v1.7.1) (2025-04-23)
+
+
+### Bug Fixes
+
+* remove category field from Content model ([15fec49](https://github.com/wize-works/wize-content/commit/15fec49b15b00c9d3b137c6eff22d2b48c88d44f))
+
+# [1.7.0](https://github.com/wize-works/wize-content/compare/v1.6.0...v1.7.0) (2025-04-23)
+
+
+### Features
+
+* update @wizeworks/graphql-factory to version 1.6.1 and enable category field in Content model ([561b771](https://github.com/wize-works/wize-content/commit/561b771bd6a1c5120b987153fa84d02266e21a21))
+
+# [1.6.0](https://github.com/wize-works/wize-content/compare/v1.5.0...v1.6.0) (2025-04-23)
+
+
+### Features
+
+* added record count to list results ([d683dd7](https://github.com/wize-works/wize-content/commit/d683dd7cee11a6e9021bc6f62ad72f687a2e5397))
+
+# [1.5.0](https://github.com/wize-works/wize-content/compare/v1.4.0...v1.5.0) (2025-04-23)
+
+
+### Features
+
+* release total count feature ([7cb7531](https://github.com/wize-works/wize-content/commit/7cb75316f421dbf390e5fea3c955e3a74db14e58))
+
+# [1.4.0](https://github.com/wize-works/wize-content/compare/v1.3.0...v1.4.0) (2025-04-23)
+
+
+### Features
+
+* add total count support to list queries ([30cb209](https://github.com/wize-works/wize-content/commit/30cb20997ffcf00970b1b34d5155923c1e92905a))
+
 # [1.3.0](https://github.com/wize-works/wize-content/compare/v1.2.0...v1.3.0) (2025-04-23)
 
 
