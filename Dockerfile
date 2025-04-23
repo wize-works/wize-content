@@ -6,14 +6,14 @@ WORKDIR /app
 # Accept build-time NODE_ENV
 ARG NODE_ENV=production
 ENV NODE_ENV=$NODE_ENV
-
+RUN echo "NODE_ENV is set to $NODE_ENV"
 # Install dependencies (including dev for build tools like TypeScript)
 COPY package.json package-lock.json* ./
 RUN npm ci
 
 # Copy source code and build
 COPY . .
-RUN echo "Checking for tsc in node_modules/.bin:" && ls -l node_modules/.bin && node_modules/.bin/tsc --version
+RUN echo "Checking for tsc in node_modules/.bin:" && ls node_modules/.bin/tsc
 
 RUN npm run build
 
