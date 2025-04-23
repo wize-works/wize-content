@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/wize-works/wize-content/compare/v1.0.3...v1.0.4) (2025-04-23)
+
+
+### Bug Fixes
+
+* add check for TypeScript compiler version in Dockerfile ([19184f1](https://github.com/wize-works/wize-content/commit/19184f13b9aecb31d5825ea9c968ee6870872e74))
+
 ## [1.0.3](https://github.com/wize-works/wize-content/compare/v1.0.2...v1.0.3) (2025-04-23)
 
 
