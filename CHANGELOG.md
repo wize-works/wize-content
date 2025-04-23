@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/wize-works/wize-content/compare/v1.0.0...v1.0.1) (2025-04-23)
+
+
+### Bug Fixes
+
+* remove redundant line in ingress.yaml for cleaner configuration ([9f8b04a](https://github.com/wize-works/wize-content/commit/9f8b04a81bf90ea5cc4eeb06577491e51fd85301))
+
 # 1.0.0 (2025-04-23)
 
 
