@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/wize-works/wize-content/compare/v1.0.1...v1.0.2) (2025-04-23)
+
+
+### Bug Fixes
+
+* enhance security in deployment configuration and Dockerfile ([59b5f8b](https://github.com/wize-works/wize-content/commit/59b5f8b34d7b8609d83c28105ab921ecf9d8a6ec))
+
 ## [1.0.1](https://github.com/wize-works/wize-content/compare/v1.0.0...v1.0.1) (2025-04-23)
 
 
