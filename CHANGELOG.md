@@ -1,3 +1,10 @@
+## [1.0.15](https://github.com/wize-works/wize-content/compare/v1.0.14...v1.0.15) (2025-04-23)
+
+
+### Bug Fixes
+
+* add deployment ID output to GitHub deployment step ([2acb381](https://github.com/wize-works/wize-content/commit/2acb381b50a860a7cc3d867a69c7e99ee2009953))
+
 ## [1.0.14](https://github.com/wize-works/wize-content/compare/v1.0.13...v1.0.14) (2025-04-23)
 
 
