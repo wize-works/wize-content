@@ -3,22 +3,15 @@ FROM node:22-alpine AS builder
 
 WORKDIR /app
 
-# Accept build-time NODE_ENV
-ARG NODE_ENV=production
-ENV NODE_ENV=$NODE_ENV
 
 # Install dependencies (including dev for build tools like TypeScript)
 COPY package.json package-lock.json* ./
-RUN npm ci --include=dev
-RUN echo "After npm ci" && ls -l node_modules/.bin || echo "tsc missing"
+RUN npm ci
 
 # Copy source code and build
-RUN echo "Before copying source" && ls -l node_modules/.bin || echo "tsc still missing"
 COPY . .
-RUN echo "After COPY" && ls -l node_modules/.bin || echo "tsc clobbered"
 
 RUN npm run build
-RUN echo "After build" && ls -l node_modules/.bin || echo "tsc missing"
 
 # Stage 2: Runtime
 FROM node:22-alpine
@@ -41,7 +34,9 @@ COPY --from=builder /app/dist ./dist
 COPY --from=builder /app/dist/models ./dist/models
 
 # Environment and port
-ENV NODE_ENV=production
+# Accept build-time NODE_ENV
+ARG NODE_ENV=production
+ENV NODE_ENV=$NODE_ENV
 EXPOSE 80
 
 # Optional: Healthcheck
