@@ -1,3 +1,10 @@
+## [1.0.11](https://github.com/wize-works/wize-content/compare/v1.0.10...v1.0.11) (2025-04-23)
+
+
+### Bug Fixes
+
+* update .dockerignore to exclude node_modules/.bin and adjust Dockerfile echo statements ([7c624f7](https://github.com/wize-works/wize-content/commit/7c624f70f0a9120c1e99921ebbd3d92dbe8a56a3))
+
 ## [1.0.10](https://github.com/wize-works/wize-content/compare/v1.0.9...v1.0.10) (2025-04-23)
 
 
