@@ -1,3 +1,10 @@
+## [1.0.10](https://github.com/wize-works/wize-content/compare/v1.0.9...v1.0.10) (2025-04-23)
+
+
+### Bug Fixes
+
+* update .dockerignore to exclude additional files ([5e38b50](https://github.com/wize-works/wize-content/commit/5e38b5091931efe065b2528a82fff3f132862bb2))
+
 ## [1.0.9](https://github.com/wize-works/wize-content/compare/v1.0.8...v1.0.9) (2025-04-23)
 
 
