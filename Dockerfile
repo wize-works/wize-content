@@ -7,9 +7,9 @@ WORKDIR /app
 ARG NODE_ENV=production
 ENV NODE_ENV=$NODE_ENV
 
-# Install dependencies
+# Install dependencies (including dev for build tools like TypeScript)
 COPY package.json package-lock.json* ./
-RUN npm ci --omit=dev
+RUN npm ci
 
 # Copy source code and build
 COPY . .
@@ -39,7 +39,7 @@ COPY --from=builder /app/dist/models ./dist/models
 ENV NODE_ENV=production
 EXPOSE 80
 
-# Optional: Healthcheck (Kubernetes can use this too)
+# Optional: Healthcheck
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s CMD wget -qO- http://localhost:80/health || exit 1
 
 # Start the app
