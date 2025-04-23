@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/wize-works/wize-content/compare/v1.0.4...v1.0.5) (2025-04-23)
+
+
+### Bug Fixes
+
+* remove unnecessary esbuild platform packages from package-lock.json ([aebe070](https://github.com/wize-works/wize-content/commit/aebe0707e9f5328cf1b714746816ae46178f16e8))
+
 ## [1.0.4](https://github.com/wize-works/wize-content/compare/v1.0.3...v1.0.4) (2025-04-23)
 
 
