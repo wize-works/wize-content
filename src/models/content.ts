@@ -24,11 +24,6 @@ const Content: GraphQLModel = {
         updatedAt: { type: 'datetime', required: true, defaultValue: 'now()' },
         updatedBy: { type: 'string', required: true },
 
-        category: {
-            type: Category,
-            required: false,
-            defaultValue: null,
-        }
     }
 };
 
