@@ -116,6 +116,7 @@ jobs:
           resource-group: ${{ secrets.AZURE_RG }}
 
       - name: Create GitHub deployment
+        id: deployment
         uses: bobheadxi/deployments@v1
         with:
           step: start
@@ -153,3 +154,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           status: success
           env: ${{ github.ref_name == 'main' && 'production' || 'development' }}
+          deployment_id: ${{ steps.deployment.outputs.deployment_id }}
