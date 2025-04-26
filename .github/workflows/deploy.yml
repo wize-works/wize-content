@@ -104,8 +104,9 @@ jobs:
 
       - name: Install kubelogin (for AAD auth)
         run: |
-          curl -LO https://github.com/Azure/kubelogin/releases/download/v0.0.25/kubelogin-linux-amd64.zip
-          unzip kubelogin-linux-amd64.zip -d kubelogin
+          LATEST_VERSION=$(curl -s https://api.github.com/repos/Azure/kubelogin/releases/latest | jq -r .tag_name)
+          curl -LO https://github.com/Azure/kubelogin/releases/download/${LATEST_VERSION}/kubelogin-linux-amd64.zip
+          sudo find kubelogin -name kubelogin -type f -exec mv {} /usr/local/bin \;
           sudo mv kubelogin/bin/linux_amd64/kubelogin /usr/local/bin
           kubelogin --version
 
@@ -135,9 +136,9 @@ jobs:
         env:
           IMAGE_TAG: ${{ needs.docker-build-and-push.outputs.version }}
           ACR_NAME: ${{ secrets.ACR_NAME }}
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          MONGO_URI: ${{ secrets.MONGO_URI }}
           SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
+          DB_NAME: ${{ secrets.DB_NAME }}
 
       - name: Deploy to AKS
         run: |
