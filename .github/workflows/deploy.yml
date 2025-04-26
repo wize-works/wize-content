@@ -13,6 +13,9 @@ jobs:
     name: Semantic Release
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    permissions:
+      contents: write
+      issues: write
     outputs:
       version: ${{ steps.get_version.outputs.version }}
     steps:
@@ -93,6 +96,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     environment: ${{ github.ref_name == 'main' && 'production' || 'development' }}
+    permissions:
+        contents: write
+        deployments: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
