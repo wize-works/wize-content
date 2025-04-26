@@ -1,3 +1,10 @@
+## [1.7.2](https://github.com/wize-works/wize-content/compare/v1.7.1...v1.7.2) (2025-04-23)
+
+
+### Bug Fixes
+
+* rename category name to 'content_category' and remove unused field ([954492c](https://github.com/wize-works/wize-content/commit/954492cee8e8d69142cab4846ab77348fc779065))
+
 ## [1.7.1](https://github.com/wize-works/wize-content/compare/v1.7.0...v1.7.1) (2025-04-23)
 
 
