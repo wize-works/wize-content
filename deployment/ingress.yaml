@@ -29,7 +29,7 @@ spec:
   tls:
     - hosts:
         - api.wize.works
-      secretName: wize-comment-tls
+      secretName: wize-content-tls
   rules:
     - host: api.wize.works
       http:
