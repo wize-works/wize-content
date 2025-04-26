@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/wize-works/wize-content/compare/v1.7.2...v1.8.0) (2025-04-26)
+
+
+### Features
+
+* migrate from Fastify to Express and MongoDB ([e1ec2ac](https://github.com/wize-works/wize-content/commit/e1ec2aca65ef0d0dc117cb04005ec2ff36703ea7))
+
 ## [1.7.2](https://github.com/wize-works/wize-content/compare/v1.7.1...v1.7.2) (2025-04-23)
 
 
