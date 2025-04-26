@@ -111,7 +111,8 @@ jobs:
       - name: Install kubelogin
         uses: azure/use-kubelogin@v1
         env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
 
       - name: Set AKS Context
         uses: azure/aks-set-context@v4
