@@ -1,3 +1,11 @@
+## [1.8.2](https://github.com/wize-works/wize-content/compare/v1.8.1...v1.8.2) (2025-04-26)
+
+
+### Bug Fixes
+
+* correct indentation for GITHUB_TOKEN in kubelogin installation step ([9720ae1](https://github.com/wize-works/wize-content/commit/9720ae11ba6385cb2d5da825b29136cef32ce520))
+* replace manual kubelogin installation with action for improved reliability ([2b08bfc](https://github.com/wize-works/wize-content/commit/2b08bfc7bd1b87cee233828b1bcd3dcd0c736d16))
+
 ## [1.8.1](https://github.com/wize-works/wize-content/compare/v1.8.0...v1.8.1) (2025-04-26)
 
 
