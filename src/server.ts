@@ -5,20 +5,30 @@ import './config/dotenv';
 import express from 'express';
 import { MongoClient } from 'mongodb';
 import { createYoga } from 'graphql-yoga';
-import { createServerSchema, createServerContext, registerSchemaRoutes } from '@wizeworks/graphql-factory-mongo';
+import { createServerSchema, createServerContext, registerSchemaRoutes, registerAdminRoutes } from '@wizeworks/graphql-factory-mongo';
+import { logger } from './config/logger';
+
 
 const port = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/';
 const database = process.env.MONGO_DB || 'wize-content';
 const mongoClient = new MongoClient(MONGO_URI);
+let currentSchemas: any = null;
 
 
 const start = async () => {
     await mongoClient.connect();
+    logger.info('MongoDB connected');
+    logger.info(`Using database: ${database}`);
 
     const yoga = createYoga({
         graphqlEndpoint: '/graphql',
-        schema: (args) => createServerSchema(args.request, mongoClient, database),
+        schema: async (args) => {
+            if(!currentSchemas) {
+                currentSchemas = createServerSchema(args.request, mongoClient, database);
+            }
+            return currentSchemas;
+        },
         context: async ({request}) => {
             const baseContext = await createServerContext(request, mongoClient);
             
@@ -33,8 +43,8 @@ const start = async () => {
     const app = express();
     app.use(express.json());
     
-    const schema = registerSchemaRoutes(app, mongoClient, database);
-
+    registerSchemaRoutes(app, mongoClient, database);
+    registerAdminRoutes(app, mongoClient, currentSchemas, database);
 
     // Use Yoga as middleware in Express
     app.use(yoga.graphqlEndpoint, yoga);
