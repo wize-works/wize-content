@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/wize-works/wize-content/compare/v1.8.3...v1.9.0) (2025-04-27)
+
+
+### Features
+
+* update @wizeworks/graphql-factory-mongo to version 1.20.3 and refactor database variable naming in server.ts ([b799a56](https://github.com/wize-works/wize-content/commit/b799a56cffd226c56f2f3645401b4e42dbafdf9c))
+
 ## [1.8.3](https://github.com/wize-works/wize-content/compare/v1.8.2...v1.8.3) (2025-04-26)
 
 
