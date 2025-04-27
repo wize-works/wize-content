@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/wize-works/wize-content/compare/v1.9.0...v1.10.0) (2025-04-27)
+
+
+### Features
+
+* update @wizeworks/graphql-factory-mongo to version 1.21.0 and add logging functionality ([b9ddd5f](https://github.com/wize-works/wize-content/commit/b9ddd5fd8cfc66ec3c94d3c011d4a09d4e8115f8))
+
 # [1.9.0](https://github.com/wize-works/wize-content/compare/v1.8.3...v1.9.0) (2025-04-27)
 
 
