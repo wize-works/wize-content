@@ -23,9 +23,10 @@ const start = async () => {
 
     const yoga = createYoga({
         graphqlEndpoint: '/graphql',
-        schema: async (args) => {
+        schema: async ({request}) => {
             if(!currentSchemas) {
-                currentSchemas = createServerSchema(args.request, mongoClient, database);
+                const apiKey: string = request.headers.get('wize-api-key') || '';
+                currentSchemas = await createServerSchema(apiKey, mongoClient, database);
             }
             return currentSchemas;
         },
