@@ -9,7 +9,7 @@ import { createServerSchema, createServerContext, registerSchemaRoutes } from '@
 
 const port = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/';
-const dbName = process.env.MONGO_DB || 'wize-content';
+const database = process.env.MONGO_DB || 'wize-content';
 const mongoClient = new MongoClient(MONGO_URI);
 
 
@@ -18,13 +18,13 @@ const start = async () => {
 
     const yoga = createYoga({
         graphqlEndpoint: '/graphql',
-        schema: (args) => createServerSchema(args.request, mongoClient, dbName),
+        schema: (args) => createServerSchema(args.request, mongoClient, database),
         context: async ({request}) => {
             const baseContext = await createServerContext(request, mongoClient);
             
             return {
                 ...baseContext,
-                dbName
+                database
             };
         },
         graphiql: true
@@ -33,7 +33,7 @@ const start = async () => {
     const app = express();
     app.use(express.json());
     
-    const schema = registerSchemaRoutes(app, mongoClient, dbName);
+    const schema = registerSchemaRoutes(app, mongoClient, database);
 
 
     // Use Yoga as middleware in Express
