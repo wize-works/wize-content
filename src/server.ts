@@ -7,6 +7,7 @@ import { MongoClient } from 'mongodb';
 import { createYoga } from 'graphql-yoga';
 import { createServerSchema, createServerContext, registerSchemaRoutes, registerAdminRoutes } from '@wizeworks/graphql-factory-mongo';
 import { logger } from './config/logger';
+import { registerCors } from './config/cors';
 
 
 const port = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
@@ -49,6 +50,8 @@ const start = async () => {
 
     // Use Yoga as middleware in Express
     app.use(yoga.graphqlEndpoint, yoga);
+    
+    registerCors(app);
 
     app.listen(port, () => {
         console.log(`🚀 wize-content API ready at http://localhost:${port}/graphql`);
