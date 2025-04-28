@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/wize-works/wize-content/compare/v1.10.5...v1.11.0) (2025-04-28)
+
+
+### Features
+
+* add CORS middleware to handle allowed origins ([2ee0763](https://github.com/wize-works/wize-content/commit/2ee07635bef7658adc46ad8007dc4bf2afe4a9ba))
+
 ## [1.10.5](https://github.com/wize-works/wize-content/compare/v1.10.4...v1.10.5) (2025-04-28)
 
 
