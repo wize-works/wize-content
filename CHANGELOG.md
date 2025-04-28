@@ -1,3 +1,17 @@
+## [1.10.3](https://github.com/wize-works/wize-content/compare/v1.10.2...v1.10.3) (2025-04-28)
+
+
+### Bug Fixes
+
+* add optional chaining to logger.info calls ([71fdcbe](https://github.com/wize-works/wize-content/commit/71fdcbeb5b6fa57d482f7acf856cd24f237dc613))
+
+## [1.10.2](https://github.com/wize-works/wize-content/compare/v1.10.1...v1.10.2) (2025-04-28)
+
+
+### Bug Fixes
+
+* update @wizeworks/graphql-factory-mongo to version 1.21.3 and remove postinstall script ([a37a2ac](https://github.com/wize-works/wize-content/commit/a37a2ac1c45de8eb76746ec998bf6653e87bf05a))
+
 ## [1.10.1](https://github.com/wize-works/wize-content/compare/v1.10.0...v1.10.1) (2025-04-27)
 
 
