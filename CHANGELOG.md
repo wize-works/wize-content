@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/wize-works/wize-content/compare/v1.11.0...v1.12.0) (2025-04-28)
+
+
+### Features
+
+* add cors dependency to package.json and package-lock.json ([d3eb88f](https://github.com/wize-works/wize-content/commit/d3eb88f4425718ab067456046376614fb49690f3))
+
 # [1.11.0](https://github.com/wize-works/wize-content/compare/v1.10.5...v1.11.0) (2025-04-28)
 
 
