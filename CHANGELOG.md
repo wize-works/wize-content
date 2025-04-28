@@ -1,3 +1,10 @@
+## [1.10.4](https://github.com/wize-works/wize-content/compare/v1.10.3...v1.10.4) (2025-04-28)
+
+
+### Bug Fixes
+
+* update ingress and service configurations for SSL and service type ([0b8c380](https://github.com/wize-works/wize-content/commit/0b8c3808b8ef814b5c6a97833b6958ec82a1edc5))
+
 ## [1.10.3](https://github.com/wize-works/wize-content/compare/v1.10.2...v1.10.3) (2025-04-28)
 
 
