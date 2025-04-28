@@ -1,3 +1,10 @@
+## [1.10.1](https://github.com/wize-works/wize-content/compare/v1.10.0...v1.10.1) (2025-04-27)
+
+
+### Bug Fixes
+
+* update @wizeworks/graphql-factory-mongo to version 1.21.1 and adjust schema function to use API key from request headers ([a5277e6](https://github.com/wize-works/wize-content/commit/a5277e60e0f58ed5b781356acce9333d1b21d90c))
+
 # [1.10.0](https://github.com/wize-works/wize-content/compare/v1.9.0...v1.10.0) (2025-04-27)
 
 
