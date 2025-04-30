@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/wize-works/wize-content/compare/v1.13.0...v1.14.0) (2025-04-30)
+
+
+### Features
+
+* update @wizeworks/graphql-factory-mongo to version 1.23.0 and enhance logging with Sentry integration ([b66475b](https://github.com/wize-works/wize-content/commit/b66475b801cdaf3e3ba2e9fb4648eae53ea91f2f))
+
 # [1.13.0](https://github.com/wize-works/wize-content/compare/v1.12.0...v1.13.0) (2025-04-29)
 
 
