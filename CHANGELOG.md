@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/wize-works/wize-content/compare/v1.14.0...v1.15.0) (2025-04-30)
+
+
+### Features
+
+* update @wizeworks/graphql-factory-mongo to version 1.24.0 in package.json and package-lock.json ([bb79f9c](https://github.com/wize-works/wize-content/commit/bb79f9cb582742ca1017c9408fae5699d720f2ad))
+
 # [1.14.0](https://github.com/wize-works/wize-content/compare/v1.13.0...v1.14.0) (2025-04-30)
 
 
