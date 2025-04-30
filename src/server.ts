@@ -5,17 +5,21 @@ import './config/dotenv';
 import express from 'express';
 import { MongoClient } from 'mongodb';
 import { createYoga } from 'graphql-yoga';
-import { createServerSchema, createServerContext, registerSchemaRoutes, registerAdminRoutes } from '@wizeworks/graphql-factory-mongo';
+import {
+    createServerSchema,
+    createServerContext,
+    registerSchemaRoutes,
+    registerAdminRoutes,
+} from '@wizeworks/graphql-factory-mongo';
 import { logger } from './config/logger';
 import { registerCors } from './config/cors';
-
+import { useFormattedErrors } from './utils/formatError';
 
 const port = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/';
 const database = process.env.MONGO_DB || 'wize-content';
 const mongoClient = new MongoClient(MONGO_URI);
 let currentSchemas: any = null;
-
 
 const start = async () => {
     await mongoClient.connect();
@@ -24,37 +28,46 @@ const start = async () => {
 
     const yoga = createYoga({
         graphqlEndpoint: '/graphql',
-        schema: async ({request}) => {
-            if(!currentSchemas) {
-                const apiKey: string = request.headers.get('wize-api-key') || '';
-                currentSchemas = await createServerSchema(apiKey, mongoClient, database);
+        schema: async ({ request }) => {
+            if (!currentSchemas) {
+                const apiKey: string =
+                    request.headers.get('wize-api-key') || '';
+                currentSchemas = await createServerSchema(
+                    apiKey,
+                    mongoClient,
+                    database
+                );
             }
             return currentSchemas;
         },
-        context: async ({request}) => {
+        context: async ({ request }) => {
             const baseContext = await createServerContext(request, mongoClient);
-            
+
             return {
                 ...baseContext,
-                database
+                database,
             };
         },
-        graphiql: true
+        graphiql: true,
+        maskedErrors: false,
+        plugins: [useFormattedErrors()],
     });
 
     const app = express();
     app.use(express.json());
-    
+
     registerSchemaRoutes(app, mongoClient, database);
     registerAdminRoutes(app, mongoClient, currentSchemas, database);
 
     // Use Yoga as middleware in Express
     app.use(yoga.graphqlEndpoint, yoga);
-    
+
     registerCors(app);
 
     app.listen(port, () => {
-        console.log(`🚀 wize-content API ready at http://localhost:${port}/graphql`);
+        console.log(
+            `🚀 wize-content API ready at http://localhost:${port}/graphql`
+        );
     });
 };
 
