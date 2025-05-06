@@ -1,3 +1,58 @@
+# [1.18.0](https://github.com/wize-works/wize-content/compare/v1.17.0...v1.18.0) (2025-05-06)
+
+
+### Bug Fixes
+
+* correct indentation for admin flag in AKS login step ([80fd64a](https://github.com/wize-works/wize-content/commit/80fd64a74bd6c6fb4ad891c529b23b992a2e8aa8))
+* update deploy.yml for non-interactive AKS auth ([ec6f5d3](https://github.com/wize-works/wize-content/commit/ec6f5d353119d0a9d04050e4092167b1cceee72b))
+
+
+### Features
+
+* update @wizeworks/graphql-factory-mongo to version 1.31.0 in package.json and package-lock.json ([f0a3f62](https://github.com/wize-works/wize-content/commit/f0a3f62721fdf5765532c87b047cb828f288fa17))
+
+# [1.17.0](https://github.com/wize-works/wize-content/compare/v1.16.0...v1.17.0) (2025-05-04)
+
+
+### Features
+
+* update @wizeworks/graphql-factory-mongo to version 1.27.0 in package.json and package-lock.json ([2fe92e1](https://github.com/wize-works/wize-content/commit/2fe92e1f78a96c00f0435e20135161b8bab1e484))
+
+# [1.16.0](https://github.com/wize-works/wize-content/compare/v1.15.0...v1.16.0) (2025-05-03)
+
+
+### Features
+
+* update @wizeworks/graphql-factory-mongo to version 1.25.0 in package.json and package-lock.json ([85af111](https://github.com/wize-works/wize-content/commit/85af11150eec8fcefb3a3827a54c1b267a7ced19))
+
+# [1.15.0](https://github.com/wize-works/wize-content/compare/v1.14.0...v1.15.0) (2025-04-30)
+
+
+### Features
+
+* update @wizeworks/graphql-factory-mongo to version 1.24.0 in package.json and package-lock.json ([bb79f9c](https://github.com/wize-works/wize-content/commit/bb79f9cb582742ca1017c9408fae5699d720f2ad))
+
+# [1.14.0](https://github.com/wize-works/wize-content/compare/v1.13.0...v1.14.0) (2025-04-30)
+
+
+### Features
+
+* update @wizeworks/graphql-factory-mongo to version 1.23.0 and enhance logging with Sentry integration ([b66475b](https://github.com/wize-works/wize-content/commit/b66475b801cdaf3e3ba2e9fb4648eae53ea91f2f))
+
+# [1.13.0](https://github.com/wize-works/wize-content/compare/v1.12.0...v1.13.0) (2025-04-29)
+
+
+### Features
+
+* update @wizeworks/graphql-factory-mongo to version 1.21.4 in package.json and package-lock.json ([9b94b7a](https://github.com/wize-works/wize-content/commit/9b94b7a6a153043d4459553a2e6b6e3d693a2944))
+
+# [1.12.0](https://github.com/wize-works/wize-content/compare/v1.11.0...v1.12.0) (2025-04-28)
+
+
+### Features
+
+* add cors dependency to package.json and package-lock.json ([d3eb88f](https://github.com/wize-works/wize-content/commit/d3eb88f4425718ab067456046376614fb49690f3))
+
 # [1.11.0](https://github.com/wize-works/wize-content/compare/v1.10.5...v1.11.0) (2025-04-28)
 
 
