@@ -118,7 +118,7 @@ jobs:
         with:
           cluster-name: ${{ secrets.AKS_CLUSTER }}
           resource-group: ${{ secrets.AZURE_RG }}
-	  admin: true
+          admin: true
 
       - name: Convert kubeconfig to use Azure CLI token
         run: kubelogin convert-kubeconfig -l azurecli
