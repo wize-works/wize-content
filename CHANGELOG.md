@@ -1,3 +1,16 @@
+# [1.18.0](https://github.com/wize-works/wize-content/compare/v1.17.0...v1.18.0) (2025-05-06)
+
+
+### Bug Fixes
+
+* correct indentation for admin flag in AKS login step ([80fd64a](https://github.com/wize-works/wize-content/commit/80fd64a74bd6c6fb4ad891c529b23b992a2e8aa8))
+* update deploy.yml for non-interactive AKS auth ([ec6f5d3](https://github.com/wize-works/wize-content/commit/ec6f5d353119d0a9d04050e4092167b1cceee72b))
+
+
+### Features
+
+* update @wizeworks/graphql-factory-mongo to version 1.31.0 in package.json and package-lock.json ([f0a3f62](https://github.com/wize-works/wize-content/commit/f0a3f62721fdf5765532c87b047cb828f288fa17))
+
 # [1.17.0](https://github.com/wize-works/wize-content/compare/v1.16.0...v1.17.0) (2025-05-04)
 
 
