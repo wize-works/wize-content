@@ -1,3 +1,10 @@
+## [1.18.2](https://github.com/wize-works/wize-content/compare/v1.18.1...v1.18.2) (2025-05-09)
+
+
+### Bug Fixes
+
+* update @wizeworks/graphql-factory-mongo to version 1.33.6 in package.json and package-lock.json ([a9d3cf1](https://github.com/wize-works/wize-content/commit/a9d3cf1be72b66fae2e0dfaf96354f9a0a3360ff))
+
 ## [1.18.1](https://github.com/wize-works/wize-content/compare/v1.18.0...v1.18.1) (2025-05-06)
 
 
